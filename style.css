@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* o * ele retira a margem e o padding de todos os elementos da página */
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+body {
+    /* a tag height 100vh irá pegar 100% da tela*/
+    /*border box ele sempre adapta o elemento filho para caber dentro do elemento pai por exemplo:
+elemento pai é o body e o elemento filho é a imagem a imagem se adapta ao elemento body.*/
+    background-color: black;
+    color: #F6F6F6;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+    text-decoration: none;
+}
+
+/* o .titulo destaque vem do index.html na classe <strong class= "titulo-destaque" */
+.titulo-destaque {
+
+    color: #22D4FD;
+}
+
+/* o .apresentacao vem do index.html na tag <main class="apresentacao">  */
+ /* margin: adiciona uma margem para centralizar os quadrados na tela*/
+ /* display:flex coloca os quadrados lado a lado */
+ /* gap: adiciona espaços iguais entre cada quadrado */
+.apresentacao {
+    padding: 5% 15%; 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.apresentacao__conteudo__titulo{
+
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.apresentacao__links{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+
+ font-family: 'Krona One', sans-serif;
+ font-weight: 400;
+ font-size: 24px;
+    
+}
+
+
+
+.apresentacao__links_link{
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* a propriedade hover ela muda as caracteristicas do botão quando passa o mouse por cima*/
+
+.apresentacao__links_link:hover{
+
+    background-color: #272727;
+    font-size : 20px;
+
+}
+
+.rodape {
+    padding:24px;
+    color: black;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
